@@ -1,0 +1,14 @@
+[package]
+name = "minR"
+version = "0.1.0"
+edition = "2018"
+
+[dependencies]
+
+
+[profile.release]
+opt-level = "z"
+lto = "fat"
+codegen-units = 1
+# strip = true
+
